@@ -1,0 +1,16 @@
+name = "quran-bot"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# بعد إنشاء الـ KV Namespace من لوحة Cloudflare (Workers & Pages > KV)
+# أو عبر الأمر: npx wrangler kv namespace create BOT_KV
+# ضع الـ id الذي يعطيه لك هنا:
+[[kv_namespaces]]
+binding = "BOT_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# لا تضع التوكن هنا إذا كان المستودع على GitHub عاماً (Public).
+# استخدم بدلاً منه Secrets (اشرحها في README):
+#   npx wrangler secret put BOT_TOKEN
+#   npx wrangler secret put OWNER_ID
+#   npx wrangler secret put WEBHOOK_SECRET   (اختياري)
