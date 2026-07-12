@@ -1,4 +1,4 @@
-name = "quran-bot"
+name = "ppwp"
 main = "worker.js"
 compatibility_date = "2024-11-01"
 
@@ -7,7 +7,7 @@ compatibility_date = "2024-11-01"
 # ضع الـ id الذي يعطيه لك هنا:
 [[kv_namespaces]]
 binding = "BOT_KV"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "08a800dd9af5427e9db1ef89439d68d9"
 
 # لا تضع التوكن هنا إذا كان المستودع على GitHub عاماً (Public).
 # استخدم بدلاً منه Secrets (اشرحها في README):
