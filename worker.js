@@ -1018,7 +1018,8 @@ export default {
       return new Response("Quran bot worker is running.", { status: 200 });
     }
 
-    if (url.pathname === "/webhook" && request.method === "POST") {
+    if ((url.pathname === "/webhook" || url.pathname === "/") && request.method === "POST") {
+
       if (env.WEBHOOK_SECRET) {
         const secret = request.headers.get("X-Telegram-Bot-Api-Secret-Token");
         if (secret !== env.WEBHOOK_SECRET) {
